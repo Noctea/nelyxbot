@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("En dev - Indisponible");
+    bot.user.setActivity("En dev - Indisponible");
     console.log("Le bot a bien été connecté");
 });
 
