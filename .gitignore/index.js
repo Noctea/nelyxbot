@@ -7,4 +7,4 @@ bot.on("ready", function() {
     console.log("NelyxBot est connecté");
 });
 
-bot.login("NDY4ODIxMTU2NDczMDc3NzYw.Di-veQ.i0fCrC6BxrN-jSVuID7l2tLjHYA");
+bot.login("");
