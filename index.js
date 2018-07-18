@@ -22,7 +22,7 @@ bot.on("guildMemberRemove", member => {
 
 bot.on("message", message => {
     if (message.content === prefix + " help"){
-        message.channel.sendMessage("Commandes : \n !n help \n !n twitter \n !n twitch");
+        message.channel.sendMessage("Commandes : \n \n !n help \n !n twitter \n !n twitch");
     }
 
     if (message.content === prefix + " twitter"){
