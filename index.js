@@ -13,11 +13,11 @@ var prefix = ("!n");
 
 bot.on("guildMemberAdd", member => {
     member.guild.channels.find("name", "bienvenue").send(`Bienvenue, ${member} sur le serveur de la **Nelyx - Team** ; avant de faire quoi que se soit va lire les règles qui se trouve dans le canal <#431231993267879946>`);
-  })
+})
 
 bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "bienvenue").send(`Quel dommage, ${member} viens de quitter le serveur de la **Nelyx - Team** !`);
-  });
+});
 
 
 bot.on("message", message => {
@@ -31,7 +31,7 @@ bot.on("message", message => {
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
         message.channel.sendEmbed(embed);
-    })
+    }
 
     if (message.content === prefix + " twitter"){
         var embed = new Discord.RichEmbed()
@@ -40,7 +40,7 @@ bot.on("message", message => {
             .setThumbnail("https://pbs.twimg.com/media/DiYnFwFW0AAcXQZ.jpg")
             .setColor("0x01A9DB")
         message.channel.sendEmbed(embed);
-    })
+    }
 
     if (message.content === prefix + " twitch"){
         var embed = new Discord.RichEmbed()
