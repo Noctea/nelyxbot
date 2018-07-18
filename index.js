@@ -41,4 +41,11 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed);
     }
 
+    if (message.content === prefix + " help"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("Test")
+            .setDescription("[TEST](https://twitter.com/NelyxTV)")
+            .setColor("0x00BFFF")
+        message.channel.sendEmbed(embed);
+    }
 });
