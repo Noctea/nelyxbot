@@ -19,7 +19,7 @@ bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "bienvenue").send(`Quel dommage, ${member} viens de quitter le serveur de la **Nelyx - Team** !`)
 })
 
-bot.on("message", message => {
+bot.on('message', message => {
 if (message.content === prefix + "twitter"){
     message.channel.sendMessage("[@NelyxTV] (https://twitter.com/NelyxTV)");
 });
