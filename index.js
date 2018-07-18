@@ -42,7 +42,7 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed);
     }
 
-    if (message.content === prefix + " twitter"){
+    if (message.content === prefix + " twitch"){
         var embed = new Discord.RichEmbed()
             .setTitle("Les Chaînes Twitch")
             .setDescription("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
