@@ -28,7 +28,7 @@ bot.on("message", message => {
             .addField("!n help", "Affiche cette page")
             .addField("!n twitter", "Affiche le twitter de Nelyx - Team")
             .addField("!n twitch", "Affiche les chaînes Twitche de Nelyx - Team")
-            .setColor("0x00BFFF")
+            .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
         message.channel.sendEmbed(embed);
     }
@@ -38,7 +38,7 @@ bot.on("message", message => {
             .setTitle("Le Twitter")
             .setDescription("[@NelyxTV](https://twitter.com/NelyxTV)")
             .setThumbnail("https://pbs.twimg.com/media/DiYnFwFW0AAcXQZ.jpg")
-            .setColor("0x00BFFF")
+            .setColor("0x01A9DB")
         message.channel.sendEmbed(embed);
     }
 
@@ -47,7 +47,7 @@ bot.on("message", message => {
             .setTitle("Les Chaînes Twitch")
             .setDescription("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
             .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
-            .setColor("0x00BFFF")
+            .setColor("0x610B5E")
         message.channel.sendEmbed(embed);
     }
 
