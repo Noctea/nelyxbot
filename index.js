@@ -12,7 +12,7 @@ var prefix = ("!n");
 
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "bienvenue").send(`Bienvenue, ${member} sur le serveur de la **Nelyx - Team** ; avant de faire quoi que se soit va lire les règles qui se trouve dans le canal #règlement`)
+    member.guild.channels.find("name", "bienvenue").send(`Bienvenue, ${member} sur le serveur de la **Nelyx - Team** ; avant de faire quoi que se soit va lire les règles qui se trouve dans le canal <#431231993267879946>`)
 })
 
 bot.on("guildMemberRemove", member => {
