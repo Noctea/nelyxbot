@@ -7,4 +7,4 @@ bot.on("ready", function() {
     console.log("NelyxBot est connecté");
 });
 
-bot.login("");
+bot.login(process.env.TOKEN);
