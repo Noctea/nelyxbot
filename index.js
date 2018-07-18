@@ -26,10 +26,10 @@ bot.on("message", message => {
     }
 
     if (message.content === prefix + " twitter"){
-        message.channel.sendMessage("[@NelyxTV] (https://twitter.com/NelyxTV)");
+        message.channel.sendMessage("[@NelyxTV](https://twitter.com/NelyxTV)");
     }
 
     if (message.content === prefix + " twitch"){
-        message.channel.sendMessage("[NelyxTTV] (https://www.twitch.tv/nelyxttv) \n [NelyxFortnite] (https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch] (https://www.twitch.tv/nelyxoverwatch)");
+        message.channel.sendMessage("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)");
     }
 });
