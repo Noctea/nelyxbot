@@ -8,3 +8,13 @@ bot.on("ready", function() {
 });
 
 bot.login(process.env.TOKEN);
+
+var prefix = ("n!");
+
+bot.on("guildMemberAdd", member => {
+    member.guild.channels.find("name", "bienvenue").send(`Bienvenue, ${member} sur le serveur de la Nelyx - Team ; avant de faire quoi que se soit va lire les règles qui se trouve dan le canal #règlement`)
+})
+
+bot.on("guildMemberRemove", member => {
+    member.guild.channels.find("name", "bienvenue").send(`Quel dommage, ${member} viens de quitter le serveur de la Nelyx - Team !`)
+})
