@@ -11,14 +11,14 @@ bot.login(process.env.TOKEN);
 var prefix = ("!n");
 
 
-bot.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.find('name', 'bienvenue');
+bot.on("guildMemberAdd", member => {
+    const channel = member.guild.channels.find("name", "bienvenue");
     if (!channel) return;
     channel.send(`Bienvenue, ${member} sur le serveur de la **Nelyx - Team** ; avant de faire quoi que se soit va lire les règles qui se trouve dans le canal <#431231993267879946>`);
   })
 
-bot.on('guildMemberRemove', member => {
-    const channel = member.guild.channels.find('name', 'bienvenue');
+bot.on("guildMemberRemove", member => {
+    const channel = member.guild.channels.find("name", "bienvenue");
     if (!channel) return;
     channel.send(`Quel dommage, ${member} viens de quitter le serveur de la **Nelyx - Team** !`);
   });
