@@ -20,7 +20,7 @@ bot.on("guildMemberRemove", member => {
 })
 
 bot.on("guildMemberBan", member => {
-    member.guild.channels.find("name", "bienvenue").send(`Quel dommage, ${member} viens de se faire bannir du serveur de la **Nelyx - Team**, il n'avais surrement pas lu le <#431231993267879946> !`)
+    member.guild.channels.find("name", "bienvenue").send(`Bon débarras, ${member} viens de se faire bannir du serveur de la **Nelyx - Team**, il n'avais surrement pas lu le <#431231993267879946> !`)
 })
 
 
