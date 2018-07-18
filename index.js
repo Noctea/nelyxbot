@@ -31,7 +31,7 @@ bot.on("message", message => {
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
         message.channel.sendEmbed(embed);
-    }
+    })
 
     if (message.content === prefix + " twitter"){
         var embed = new Discord.RichEmbed()
@@ -40,7 +40,7 @@ bot.on("message", message => {
             .setThumbnail("https://pbs.twimg.com/media/DiYnFwFW0AAcXQZ.jpg")
             .setColor("0x01A9DB")
         message.channel.sendEmbed(embed);
-    }
+    })
 
     if (message.content === prefix + " twitch"){
         var embed = new Discord.RichEmbed()
