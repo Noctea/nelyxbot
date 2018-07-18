@@ -21,10 +21,6 @@ bot.on("guildMemberRemove", member => {
 
 
 bot.on("message", message => {
-    if (message.content === prefix + " help"){
-        message.channel.sendMessage("Commandes : \n \n !n help \n !n twitter \n !n twitch");
-    }
-
     if (message.content === prefix + " twitter"){
         message.channel.sendMessage("[@NelyxTV](https://twitter.com/NelyxTV)");
     }
@@ -32,4 +28,17 @@ bot.on("message", message => {
     if (message.content === prefix + " twitch"){
         message.channel.sendMessage("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)");
     }
+
+    if (message.content === prefix + " help"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("Commandes")
+            .setDescription("Commandes Disponible avec <@468821156473077760>")
+            .addField("!n help", "Affiche cette page")
+            .addField("!n twitter", "Affiche le twitter de Nelyx - Team")
+            .addField("!n twitch", "Affiche les chaînes Twitche de Nelyx - Team")
+            .setColor("0x00BFFF")
+            .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
+        message.channel.sendEmbed(embed);
+    }
+
 });
