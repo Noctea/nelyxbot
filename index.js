@@ -21,14 +21,6 @@ bot.on("guildMemberRemove", member => {
 
 
 bot.on("message", message => {
-    if (message.content === prefix + " twitter"){
-        message.channel.sendMessage("[@NelyxTV](https://twitter.com/NelyxTV)");
-    }
-
-    if (message.content === prefix + " twitch"){
-        message.channel.sendMessage("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)");
-    }
-
     if (message.content === prefix + " help"){
         var embed = new Discord.RichEmbed()
             .setTitle("Commandes")
@@ -38,6 +30,24 @@ bot.on("message", message => {
             .addField("!n twitch", "Affiche les chaînes Twitche de Nelyx - Team")
             .setColor("0x00BFFF")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
+        message.channel.sendEmbed(embed);
+    }
+
+    if (message.content === prefix + " twitter"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("Le Twitter")
+            .setDescription("[@NelyxTV](https://twitter.com/NelyxTV)")
+            .setThumbnail("https://pbs.twimg.com/media/DiYnFwFW0AAcXQZ.jpg")
+            .setColor("0x00BFFF")
+        message.channel.sendEmbed(embed);
+    }
+
+    if (message.content === prefix + " twitter"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("Les Chaînes Twitch")
+            .setDescription("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
+            .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
+            .setColor("0x00BFFF")
         message.channel.sendEmbed(embed);
     }
 
