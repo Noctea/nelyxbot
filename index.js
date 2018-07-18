@@ -23,7 +23,7 @@ bot.on("guildMemberRemove", member => {
 bot.on("message", message => {
     if (message.content === prefix + " help"){
         var embed = new Discord.RichEmbed()
-            .setTitle("Commandes")
+            .setTitle("Commandes :")
             .setDescription("Commandes Disponible avec <@468821156473077760>")
             .addField("!n help", "Affiche cette page")
             .addField("!n twitter", "Affiche le twitter de Nelyx - Team")
