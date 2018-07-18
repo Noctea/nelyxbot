@@ -21,5 +21,5 @@ bot.on("guildMemberRemove", member => {
 
 bot.on("message", message => {
     if (message.content === prefix + "twitter"){
-        message.reply("[@NelyxTV] (https://twitter.com/NelyxTV)");
+        message.channel.sendMessage("[@NelyxTV] (https://twitter.com/NelyxTV)");
     })
