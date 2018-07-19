@@ -55,7 +55,7 @@ bot.on("message", message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Candidature Nelyx - Team :")
             .setDescription("Si vous souhaitez faire une candidature pour la Nelyx - Team")
-            .addField("[Candidature Nelyx - Fortnite](https://docs.google.com/forms/d/e/1FAIpQLSd2pOi3jduntU38tSacEBHFAR26Db5dri2AIdV7-zRi75jqzw/viewform))
+            .addField("[Candidature Nelyx - Fortnite](https://docs.google.com/forms/d/e/1FAIpQLSd2pOi3jduntU38tSacEBHFAR26Db5dri2AIdV7-zRi75jqzw/viewform)")
             .addField("[Candidature Nelyx - Overwatch](https://docs.google.com/forms/d/e/1FAIpQLSfHI9JZKm3dQs1LVxKonuKB-JxElsfS2v9U3nqtsguuq4frRg/viewform)")
             .setThumbnail("https://pbs.twimg.com/media/DibwUXIXcAUli_m.jpg:large")
             .setColor("0x0489B1")
