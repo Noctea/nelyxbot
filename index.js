@@ -19,8 +19,8 @@ bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "aéroport").send(`Quel dommage, ${member} viens de quitter le serveur de la **Nelyx - Team** !`);
 })
 
-bot.actionType("guildAuditLogs", member => {
-    member_ban_add.guild.channels.find("name", "aéroport").send(`Sa ne doit pas être une grosse perte, ${member} viens de se faire bannir du serveur de la Nelyx - Team ; il n'avais surrement pas lu le <#431231993267879946>`);
+bot.actionType("member_ban_add", member => {
+    member.guild.channels.find("name", "aéroport").send(`Sa ne doit pas être une grosse perte, ${member} viens de se faire bannir du serveur de la Nelyx - Team ; il n'avais surrement pas lu le <#431231993267879946`);
 });
 
 
