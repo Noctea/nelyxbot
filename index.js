@@ -31,7 +31,7 @@ bot.on("message", message => {
             .addField("!n candidature", "Affiche les google form disponible pour les candidature dans la Nelyx - Team")
             .addField("!n infos", "Affiche les infos du Discord ; ex : Nom du serveur, Date de création, etc...")
             .setColor("0xFE2E2E")
-            .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
+            .setFooter("En espérant que vous passerez du bon temps sur le Discord de la Nelyx - Team")
         message.channel.sendEmbed(embed);
     }
 
