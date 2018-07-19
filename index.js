@@ -28,7 +28,7 @@ bot.on("message", message => {
             .addField("!n help", "Affiche cette page")
             .addField("!n twitter", "Affiche le twitter de Nelyx - Team")
             .addField("!n twitch", "Affiche les chaînes Twitch de Nelyx - Team")
-            .addField("!n candidature", "affiche les google form disponible pour les candidature dans la Nelyx - Team")
+            .addField("!n candidature", "Affiche les google form disponible pour les candidature dans la Nelyx - Team")
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
         message.channel.sendEmbed(embed);
