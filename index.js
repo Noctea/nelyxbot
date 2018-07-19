@@ -27,7 +27,7 @@ bot.on("message", message => {
             .setDescription("Commandes Disponible avec <@468821156473077760>")
             .addField("!n help", "Affiche cette page")
             .addField("!n twitter", "Affiche le twitter de Nelyx - Team")
-            .addField("!n twitch", "Affiche les chaînes Twitche de Nelyx - Team")
+            .addField("!n twitch", "Affiche les chaînes Twitch de Nelyx - Team")
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
         message.channel.sendEmbed(embed);
