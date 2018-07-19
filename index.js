@@ -46,7 +46,7 @@ bot.on("message", message => {
     if (message.content === prefix + " twitch"){
         var embed = new Discord.RichEmbed()
             .setTitle("Les Chaînes Twitch :")
-            .setDescription("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
+            .setDescription("\n [NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
             .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
             .setColor("0x610B5E")
         message.channel.sendEmbed(embed);
