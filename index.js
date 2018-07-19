@@ -70,7 +70,7 @@ bot.on("message", message => {
             .addField("Nom du Discord", message.guild.name)
             .addField("Crée le", message.guild.createdAt)
             .addField("Tu as rejoint le", message.member.joinedAt)
-            .addField("Membres sur le Discord", message.guild.memberCount)
+            .addField("Nombres de membres sur le Discord", message.guild.memberCount)
             .setThumbnail("https://pbs.twimg.com/media/DibwUXIXcAUli_m.jpg:large")
             .setColor("0x0404B4")
         message.channel.sendEmbed(embed)
