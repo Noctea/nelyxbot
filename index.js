@@ -28,6 +28,7 @@ bot.on("message", message => {
             .addField("!n help", "Affiche cette page")
             .addField("!n twitter", "Affiche le twitter de Nelyx - Team")
             .addField("!n twitch", "Affiche les chaînes Twitch de Nelyx - Team")
+            .addField("!n candidature", "affiche les google form disponible pour les candidature dans la Nelyx - Team")
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de Nelyx - Team")
         message.channel.sendEmbed(embed);
@@ -45,8 +46,8 @@ bot.on("message", message => {
     if (message.content === prefix + " twitch"){
         var embed = new Discord.RichEmbed()
             .setTitle("Les Chaînes Twitch")
-            .setDescription("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
-            .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
+            .setDescription("[NelyxTTV](https://www.twitch.tv/nelyxttv) \n [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)", "")
+            .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png", "")
             .setColor("0x610B5E")
         message.channel.sendEmbed(embed);
     }
