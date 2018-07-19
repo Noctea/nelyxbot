@@ -64,4 +64,16 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed);
     }
 
+    if (message.content === prefix + " infos"){
+        var embed = new Discord.RichEmbed()
+            .setDescription("Informations sur le Discord :")
+            .addField("Nom du Discord", message.guild.name)
+            .addField("Crée le", message.guild.createdAt)
+            .addField("Tu as rejoint le", message.member.joinedAt)
+            .addField("Utilisateur sur le Discord n°", message.guild.memberCount)
+            .setThumbnail("https://pbs.twimg.com/media/DibwUXIXcAUli_m.jpg:large")
+            .setColor("0x0404B4")
+        message.channel.sendEmbed(embed)
+    }
+
 });
