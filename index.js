@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 var bot = new Discord.Client();
 
-bot.on("ready", function() {
+bot.on("ready", function () {
     bot.user.setActivity("En dev | !n help");
 });
 
@@ -21,7 +21,7 @@ bot.on("guildMemberRemove", member => {
 
 
 bot.on("message", message => {
-    if (message.content === prefix + " help"){
+    if (message.content === prefix + " help") {
         var embed = new Discord.RichEmbed()
             .setTitle("Commandes :")
             .setDescription("Commandes Disponible avec <@468821156473077760>")
@@ -35,7 +35,7 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed);
     }
 
-    if (message.content === prefix + " twitter"){
+    if (message.content === prefix + " twitter") {
         var embed = new Discord.RichEmbed()
             .setTitle("Le Twitter :")
             .setDescription("[@NelyxTV](https://twitter.com/NelyxTV)")
@@ -44,28 +44,32 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed);
     }
 
-    if (message.content === prefix + " twitch"){
+    if (message.content === prefix + " twitch") {
         var embed = new Discord.RichEmbed()
             .setTitle("Les Chaînes Twitch :")
-            .setDescription(" \n - [NelyxTTV](https://www.twitch.tv/nelyxttv) \n - [NelyxFortnite](https://www.twitch.tv/nelyxfortnite) \n - [NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
+            .setDescription("Nelyx - Team possède plusieurs Web TV sur Twitch")
+            .addField("Web TV - Fortnite", "[NelyxFortnite](https://www.twitch.tv/nelyxfortnite)")
+            .addField("Web TV - Overwatch", "[NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
+            .addField("Web TV - Autres", "[NelyxTTV](https://www.twitch.tv/nelyxttv)")
             .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
             .setColor("0x610B5E")
         message.channel.sendEmbed(embed);
     }
 
-    if (message.content === prefix + " candidature"){
+    if (message.content === prefix + " candidature") {
         var embed = new Discord.RichEmbed()
             .setTitle("Candidature Nelyx - Team :")
             .setDescription("Si vous souhaitez faire une candidature pour la Nelyx - Team")
-            .addField("Candidature Fortnite", "[Nelyx - Fortnite](https://docs.google.com/forms/d/e/1FAIpQLSd2pOi3jduntU38tSacEBHFAR26Db5dri2AIdV7-zRi75jqzw/viewform)")
-            .addField("Candidature Overwatch", "[Nelyx - Overwatch](https://docs.google.com/forms/d/e/1FAIpQLSfHI9JZKm3dQs1LVxKonuKB-JxElsfS2v9U3nqtsguuq4frRg/viewform)")
+            .addField("Candidature Fortnite", "[Nelyx - Fortnite](https://goo.gl/forms/HbvdUGsl9XWVN4Pf2)")
+            .addField("Candidature Overwatch", "[Nelyx - Overwatch](https://goo.gl/forms/194lyH5jU0lsXTBH2)")
+            .addField("Candidature Paladins", "[Nelyx - Paladins](https://goo.gl/forms/Jf9l4haLC6VvNmkU2)")
             .setThumbnail("https://pbs.twimg.com/media/DibwUXIXcAUli_m.jpg:large")
             .setColor("0x0489B1")
             .setFooter("Ce sont des formulaires à remplir obligatoirement si vous voulez intégrer la Nelyx - Team")
         message.channel.sendEmbed(embed);
     }
 
-    if (message.content === prefix + " infos"){
+    if (message.content === prefix + " infos") {
         var embed = new Discord.RichEmbed()
             .setDescription("Informations sur le Discord :")
             .addField("Nom du Discord", message.guild.name)
