@@ -82,12 +82,4 @@ bot.on("message", message => {
         message.channel.sendEmbed(embed)
     }
 
-    if (message.content === prefix + " test") {
-        var embed = new Discord.RichEmbed()
-            .setThumbnail("https://lh6.googleusercontent.com/OLJOn1kzFfCuYI-c1QPhCqUR76g7A5-hhzSeeukJJLHR6UmM-saCcALhcnEiJ96mLNejHKdMow=w1000")
-            .setThumbnail("https://lh5.googleusercontent.com/0OHe3WxuGW1nMNWyo0Cs1LdO-HH9onw-3mCYUMaFPGO9kcyXzsfeSOuN-lLrmQACPCigztq9AQ=w1000")
-            .setColor("0x0404B4")
-        message.channel.sendEmbed(embed)
-    }
-
 });
