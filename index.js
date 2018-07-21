@@ -12,14 +12,14 @@ var prefix = ("!n");
 
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "aéroport").send(`Bienvenue, ${member} sur le serveur de la **Nelyx - Team** ; avant de faire quoi que se soit va lire les règles qui se trouve dans le canal <#431231993267879946>`);
+    member.guild.channels.find("name", "aéroport").send(`Bienvenue, ${member} sur le serveur de la **${member.guild.name}** ; avant de faire quoi que se soit va lire les règles qui se trouve dans le canal <#431231993267879946>`);
 })
 
 bot.on("guildMemberRemove", member => {
     member.guild.fetchAuditLogs().then(function(logs) {
         let log = logs.entries.first();
         if (log.action === "MEMBER_BAN_ADD") {
-            member.guild.channels.find("name", "aéroport").send(`Ça ne doit pas être une grosse perte, ${member} viens de se faire bannir du serveur de la Nelyx - Team ; il n'avais surrement pas lu le <#431231993267879946>`);
+            member.guild.channels.find("name", "aéroport").send(`Ça ne doit pas être une grosse perte, ${member} viens de se faire bannir du serveur de la **${member.guild.name}** ; il n'avais surrement pas lu le <#431231993267879946>`);
         } else {
             member.guild.channels.find("name", "aéroport").send(`Quel dommage, ${member} viens de quitter le serveur de la **${member.guild.name}** !`);
         }
