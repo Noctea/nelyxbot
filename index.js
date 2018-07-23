@@ -36,6 +36,7 @@ bot.on("message", message => {
             .addField("!n twitter", "Affiche le twitter de la Nelyx - Team")
             .addField("!n twitch", "Affiche les chaînes Twitch de la Nelyx - Team")
             .addField("!n candidature", "Affiche les google form disponible pour les candidature dans la Nelyx - Team")
+            .addField("!n facebook", "Affiche la page Facebook de la Nelyx - Team")
             .addField("!n infos", "Affiche les infos du Discord ; ex : Nom du serveur, Date de création, etc...")
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de la Nelyx - Team")
@@ -61,6 +62,17 @@ bot.on("message", message => {
             .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
             .setColor("0x610B5E")
             .setFooter("N'hésitez pas à aller vous abonné !")
+        message.channel.sendEmbed(embed);
+    }
+
+    if (message.content === prefix + " facebook") {
+        var embed = new Discord.RichEmbed()
+            .setTitle("La Page Facebook :")
+            .setDescription("Nelyx - Team possède une page Facebook")
+            .addField("Web TV - Fortnite", "[NelyxTV](https://www.facebook.com/NelyxTV/)")
+            .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
+            .setColor("0x0431B4")
+            .setFooter("N'hésitez pas à liker la page !")
         message.channel.sendEmbed(embed);
     }
 
