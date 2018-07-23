@@ -49,6 +49,7 @@ bot.on("message", message => {
             .setDescription("[@NelyxTV](https://twitter.com/NelyxTV)")
             .setThumbnail("https://pbs.twimg.com/media/DiYnFwFW0AAcXQZ.jpg")
             .setColor("0x01A9DB")
+            .setFooter("N'hésitez pas à allez vous abonner !")
         message.channel.sendEmbed(embed);
     }
 
@@ -71,7 +72,7 @@ bot.on("message", message => {
             .addField("Web TV - Autres", "[NelyxTTV](https://www.twitch.tv/nelyxttv)")
             .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
             .setColor("0x610B5E")
-            .setFooter("N'hésitez pas à aller vous abonné !")
+            .setFooter("N'hésitez pas à allez vous abonné !")
         message.channel.sendEmbed(embed);
     }
 
