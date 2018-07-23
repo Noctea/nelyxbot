@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function () {
-    bot.user.setActivity("En dev | !n help");
+    bot.user.setActivity("| !n help |");
 });
 
 bot.login(process.env.TOKEN);
