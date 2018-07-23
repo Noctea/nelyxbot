@@ -79,7 +79,7 @@ bot.on("message", message => {
     if (message.content === prefix + " candidature") {
         var embed = new Discord.RichEmbed()
             .setTitle("Candidature Nelyx - Team :")
-            .setDescription("Si vous souhaitez faire une candidature pour la Nelyx - Team")
+            .setDescription("Si vous souhaitez faire une candidature pour la Nelyx - Team c'est ici que sa ce passe")
             .addField("Candidature Fortnite", "[Nelyx - Fortnite](https://goo.gl/forms/HbvdUGsl9XWVN4Pf2)")
             .addField("Candidature Overwatch", "[Nelyx - Overwatch](https://goo.gl/forms/194lyH5jU0lsXTBH2)")
             .addField("Candidature Paladins", "[Nelyx - Paladins](https://goo.gl/forms/Jf9l4haLC6VvNmkU2)")
