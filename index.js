@@ -36,7 +36,8 @@ bot.on("message", message => {
             .addField("!n twitter", "Affiche le twitter de la Nelyx - Team")
             .addField("!n facebook", "Affiche la page Facebook de la Nelyx - Team")
             .addField("!n twitch", "Affiche les chaînes Twitch de la Nelyx - Team")
-            .addField("!n candidature", "Affiche les google form disponible pour les candidature dans la Nelyx - Team")
+            .addField("!n candidature", "Affiche les Google Form disponible pour les candidature de la Nelyx - Team")
+            .addField("!n instagram", "Affiche l'Instagram de la Nelyx - Team")
             .addField("!n infos", "Affiche les infos du Discord ; ex : Nom du serveur, Date de création, etc...")
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de la Nelyx - Team")
@@ -49,7 +50,7 @@ bot.on("message", message => {
             .setDescription("[@NelyxTV](https://twitter.com/NelyxTV)")
             .setThumbnail("https://pbs.twimg.com/media/DiYnFwFW0AAcXQZ.jpg")
             .setColor("0x01A9DB")
-            .setFooter("N'hésitez pas à allez vous abonner !")
+            .setFooter("N'hésitez pas à vous abonner !")
         message.channel.sendEmbed(embed);
     }
 
@@ -72,7 +73,17 @@ bot.on("message", message => {
             .addField("Web TV - Autres", "[NelyxTTV](https://www.twitch.tv/nelyxttv)")
             .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
             .setColor("0x610B5E")
-            .setFooter("N'hésitez pas à allez vous abonné !")
+            .setFooter("N'hésitez pas à nous follow !")
+        message.channel.sendEmbed(embed);
+    }
+
+    if (message.content === prefix + " instagram") {
+        var embed = new Discord.RichEmbed()
+            .setTitle("L'Instagram :")
+            .setDescription("[@nelyxtv](https://www.instagram.com/nelyxtv/)")
+            .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
+            .setColor("0x000000")
+            .setFooter("N'hésitez pas à vous abonner !")
         message.channel.sendEmbed(embed);
     }
 
