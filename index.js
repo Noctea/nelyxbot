@@ -37,7 +37,7 @@ bot.on("message", message => {
             .addField("!n facebook", "Affiche la page Facebook de la Nelyx - Team")
             .addField("!n twitch", "Affiche les chaînes Twitch de la Nelyx - Team")
             .addField("!n instagram", "Affiche l'Instagram de la Nelyx - Team")
-            .addField("!n candidature", "Affiche les Google Form disponible pour les candidature de la Nelyx - Team")
+            .addField("!n candidature", "Affiche le Google Form pour faire une candidature pour la Nelyx - Team")
             .addField("!n infos", "Affiche les infos du Discord ; ex : Nom du serveur, Date de création, etc...")
             .setColor("0xFE2E2E")
             .setFooter("En espérant que vous passerez du bon temps sur le Discord de la Nelyx - Team")
@@ -92,11 +92,9 @@ bot.on("message", message => {
             .setTitle("Candidature Nelyx - Team :")
             .setDescription("Si vous souhaitez faire une candidature pour la Nelyx - Team c'est ici que sa ce passe")
             .addField("Candidature Fortnite", "[Nelyx - Fortnite](https://goo.gl/forms/HbvdUGsl9XWVN4Pf2)")
-            .addField("Candidature Overwatch", "[Nelyx - Overwatch](https://goo.gl/forms/194lyH5jU0lsXTBH2)")
-            .addField("Candidature Paladins", "[Nelyx - Paladins](https://goo.gl/forms/Jf9l4haLC6VvNmkU2)")
             .setThumbnail("https://pbs.twimg.com/media/DibwUXIXcAUli_m.jpg:large")
             .setColor("0x0489B1")
-            .setFooter("Ce sont des formulaires à remplir obligatoirement si vous voulez intégrer la Nelyx - Team")
+            .setFooter("Formulaire à remplir obligatoirement pour intégrer la Nelyx - Team")
         message.channel.sendEmbed(embed);
     }
 
