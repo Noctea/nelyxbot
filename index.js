@@ -69,7 +69,6 @@ bot.on("message", message => {
             .setTitle("Les Chaînes Twitch :")
             .setDescription("Nelyx - Team possède plusieurs Web TV sur Twitch")
             .addField("Web TV - Fortnite", "[NelyxFortnite](https://www.twitch.tv/nelyxfortnite)")
-            .addField("Web TV - Overwatch", "[NelyxOverwatch](https://www.twitch.tv/nelyxoverwatch)")
             .addField("Web TV - Autres", "[NelyxTTV](https://www.twitch.tv/nelyxttv)")
             .setThumbnail("https://static-cdn.jtvnw.net/jtv_user_pictures/1ebfa2cc-9c03-42e7-8d41-41e0bd1f2aef-profile_image-300x300.png")
             .setColor("0x610B5E")
