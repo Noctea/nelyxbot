@@ -93,7 +93,7 @@ bot.on("message", message => {
             .addField("Candidature Fortnite", "[Nelyx - Fortnite](https://goo.gl/forms/HbvdUGsl9XWVN4Pf2)")
             .setThumbnail("https://pbs.twimg.com/media/DibwUXIXcAUli_m.jpg:large")
             .setColor("0x0489B1")
-            .setFooter("Formulaire à remplir obligatoirement pour intégrer la Nelyx - Team")
+            .setFooter(`Demande de ${message.author.username}`)
         message.channel.sendEmbed(embed);
     }
 
