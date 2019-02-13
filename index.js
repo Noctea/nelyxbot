@@ -90,7 +90,7 @@ bot.on("message", message => {
         var embed = new Discord.RichEmbed()
             .setTitle("Candidature Nelyx - Team :")
             .setDescription("Si vous souhaitez faire une candidature pour la Nelyx - Team c'est ici que sa ce passe")
-            .addField("Candidature Fortnite", "[Nelyx - Fortnite](https://goo.gl/forms/HbvdUGsl9XWVN4Pf2)")
+            .addField("Candidature Fortnite", "[Nelyx - Fortnite (Google Form)](https://goo.gl/forms/HbvdUGsl9XWVN4Pf2)")
             .setThumbnail("https://pbs.twimg.com/media/DibwUXIXcAUli_m.jpg:large")
             .setColor("0x0489B1")
             .setFooter(`Demande de ${message.author.username}`)
